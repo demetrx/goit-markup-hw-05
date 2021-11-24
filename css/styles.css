@@ -106,6 +106,11 @@ p {
   color: var(--paragraph-text-color);  
 }
 
+footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
 /* buttons */
 .button {
     color: var(--secondary-background-colour);
@@ -253,8 +258,6 @@ header{
 }
 
 footer .container{
-    padding-top: 60px;
-    padding-bottom: 60px;
     display: flex;
 }
 
@@ -353,7 +356,8 @@ address li{
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.projects li:hover{
+.projects li:hover,
+.projects li:focus{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -388,10 +392,12 @@ address li{
 .plug-container{
     width: 270px;
     height: 120px;
-    padding: 25px 100px;
     background-color: var(--secondary-background-colour);
     margin-bottom: 30px;
     border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -487,28 +493,27 @@ footer .container{
     justify-content: space-between;
 }
 
-.clients li{
+.clients a{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 16px 32px;
     color: #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.clients li:hover,
-.clients li:focus{
+.clients a:hover,
+.clients a:focus{
     border: 1px solid var(--accent-color);
     color: var(--accent-color);
 }
 
-.clients a{
-    color: inherit;
-}
-
-.clients .container{
+.clients{
     padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 
