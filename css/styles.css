@@ -231,8 +231,7 @@ address{
     padding: 200px 0;
 }
 
-.our-team,
-header{
+.our-team{
     margin-bottom: 0;
     padding-top: 24px;
     padding-bottom: 25px;
@@ -581,11 +580,12 @@ header .container{
     padding: 0;
 }
 
-.projects-description{
+.portfolio .projects-description{
     position: relative;
     width: 370px;
     height: 294px;
     overflow: hidden;
+    padding: 0;
 }
 
 
@@ -649,4 +649,5 @@ header .container{
     background-color: inherit;
     position: absolute;
     right: 0;
+    cursor: pointer;
 }
